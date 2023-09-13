@@ -1,0 +1,10 @@
+kingdom = "Ocean"
+princess = "Ariel"
+problem = "Tail"
+
+config = open("config.txt", "w")
+configelements = [kingdom, princess, problem]
+for line in configelements:
+    config.write("%s\n" % line)
+config.close()
+print('Done')
